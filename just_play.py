@@ -9,7 +9,7 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 ## slacker import #####
 # from slacker import Slacker
 #
-# slack = Slacker('xoxb-502213453520-507688609445-55S9ZeOjJjKlF63Lcno3YdMt')
+# slack = Slacker('<>')
 #######################
 import json
 import os
@@ -24,10 +24,10 @@ from flask import Flask, request, make_response, render_template
 
 app = Flask(__name__)
 
-slack_token = "xoxb-502213453520-507688609445-QETJNG0ztaSQYzNFiokLWYzS"
-slack_client_id = "502213453520.506751055472"
-slack_client_secret = "c6e9f4449c37237c44659b3055b404b4"
-slack_verification = "Oy60k6jWYKnCD6dmHKgR1NEL"
+slack_token = "<>"
+slack_client_id = "<>"
+slack_client_secret = "<>"
+slack_verification = "<>"
 sc = SlackClient(slack_token)
 
 # def pre_answer():
